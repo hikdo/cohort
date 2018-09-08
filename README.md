@@ -59,6 +59,6 @@ export GITHUB_TOKEN=<token_with_repo_access>
 
 npm install
 
-node_modules/release-it/bin/release.js $VERSION  -e
+node_modules/release-it/bin/release-it.js $VERSION  -e
 node_modules/publish-release/bin/publish-release --token $GITHUB_TOKEN --owner elo7 --repo cohort --assets build/cohort-$VERSION.zip --tag $VERSION --name $VERSION --notes 'Release for Kibana '$VERSION''
 ```
