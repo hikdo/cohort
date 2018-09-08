@@ -18,7 +18,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Cohort_analysis):
 ## install
 
 ```
-bin/kibana-plugin install https://github.com/elo7/cohort/releases/download/6.3.2/cohort-6.3.2.zip
+bin/kibana-plugin install https://github.com/hikdo/cohort/releases/download/6.4.0/cohort-6.4.0.zip
 ```
 
 ## uninstall
@@ -59,6 +59,6 @@ export GITHUB_TOKEN=<token_with_repo_access>
 
 npm install
 
-node_modules/release-it/bin/release.js $VERSION  -e
+node_modules/release-it/bin/release-it.js $VERSION  -e
 node_modules/publish-release/bin/publish-release --token $GITHUB_TOKEN --owner elo7 --repo cohort --assets build/cohort-$VERSION.zip --tag $VERSION --name $VERSION --notes 'Release for Kibana '$VERSION''
 ```
