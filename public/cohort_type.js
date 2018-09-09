@@ -39,7 +39,7 @@ export default function CohortTypeProvider(Private) {
           title: 'Total',
           max: 1,
           min: 1,
-          aggFilter: ['count', 'unique count', 'sum', 'avg'],
+          aggFilter: ['count', 'cardinality', 'sum', 'avg'],
           defaults: [
             { type: 'count', schema: 'metric' },
           ],
